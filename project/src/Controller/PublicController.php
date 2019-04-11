@@ -30,4 +30,12 @@ class PublicController extends AbstractController
     {
         return $this->render('public/contact.html.twig');
     }
+
+    /**
+     * @Route("/loginselect", name="loginselect")
+     */
+    public function loginselect()
+    {
+        return $this->render('public/loginselect.html.twig');
+    }
 }

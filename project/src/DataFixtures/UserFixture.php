@@ -27,7 +27,7 @@ class UserFixture extends Fixture
 
         $user->setEmail('a@hotmail.com');
 
-        $user->setRole('admin');
+        $user->setRole('ROLE_ADMIN');
 
         $manager->persist($user);
 
@@ -40,7 +40,7 @@ class UserFixture extends Fixture
 
         $user1->setEmail('b@hotmail.com');
 
-        $user1->setRole('student');
+        $user1->setRole('ROLE_STUDENT');
 
 
         $manager->persist($user1);
