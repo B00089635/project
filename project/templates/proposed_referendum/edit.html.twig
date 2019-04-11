@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit ProposedReferendum{% endblock %}
+
+{% block body %}
+    <h1>Edit ProposedReferendum</h1>
+
+    {{ include('proposed_referendum/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('proposed_referendum_index') }}">back to list</a>
+
+    {{ include('proposed_referendum/_delete_form.html.twig') }}
+{% endblock %}

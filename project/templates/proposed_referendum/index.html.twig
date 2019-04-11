@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ProposedReferendum index{% endblock %}
+
+{% block body %}
+    <h1>ProposedReferendum index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>User</th>
+                <th>Details</th>
+                <th>Support</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for proposed_referendum in proposed_referendums %}
+            <tr>
+                <td>{{ proposed_referendum.id }}</td>
+                <td>{{ proposed_referendum.user }}</td>
+                <td>{{ proposed_referendum.details }}</td>
+                <td>{{ proposed_referendum.support }}</td>
+                <td>
+                    <a href="{{ path('proposed_referendum_show', {'id': proposed_referendum.id}) }}">show</a>
+                    <a href="{{ path('proposed_referendum_edit', {'id': proposed_referendum.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('proposed_referendum_new') }}">Create new</a>
+{% endblock %}

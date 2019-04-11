@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ProposedReferendum{% endblock %}
+
+{% block body %}
+    <h1>ProposedReferendum</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ proposed_referendum.id }}</td>
+            </tr>
+            <tr>
+                <th>User</th>
+                <td>{{ proposed_referendum.user }}</td>
+            </tr>
+            <tr>
+                <th>Details</th>
+                <td>{{ proposed_referendum.details }}</td>
+            </tr>
+            <tr>
+                <th>Support</th>
+                <td>{{ proposed_referendum.support }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('proposed_referendum_index') }}">back to list</a>
+
+    <a href="{{ path('proposed_referendum_edit', {'id': proposed_referendum.id}) }}">edit</a>
+
+    {{ include('proposed_referendum/_delete_form.html.twig') }}
+{% endblock %}

@@ -5,7 +5,7 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
 
         {% block stylesheets %}{% endblock %}
-        <link rel="stylesheet" href="../css/style.css"/>
+        <link rel="stylesheet" href="../css/adminstyle.css"/>
     </head>
     <body>
 
@@ -13,10 +13,10 @@
         <li><a href = "{{ url('public_home') }}"> Home</a></li>
         <li><a href = "{{ url('public_about') }}"> About</a></li>
         <li><a href = "{{ url('public_contact') }}"> Contact Us</a></li>
-        <li><a href = "{{ url('loginselect') }}"> Login</a></li>
-        <li style="float:right"><a href = "{{ url('loginselect') }}"> Login</a></li>
+        <li><a href = "{{ url('admin') }}"> Admin</a></li>
+        <li><a href="{{ path('referendum_index') }}">Referendum</a></li>
+        <li style="float:right"><a href="{{ path('logout') }}">Logout</a></li>
     </ul>
-
 
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}

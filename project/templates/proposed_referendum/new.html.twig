@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New ProposedReferendum{% endblock %}
+
+{% block body %}
+    <h1>Create new ProposedReferendum</h1>
+
+    {{ include('proposed_referendum/_form.html.twig') }}
+
+    <a href="{{ path('proposed_referendum_index') }}">back to list</a>
+{% endblock %}
