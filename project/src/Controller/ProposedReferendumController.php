@@ -13,7 +13,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 
 /**
- * @Route("/proposed/referendum")
+ * @Route("/proposedreferendum")
  * @IsGranted("ROLE_STUDENT")
  */
 class ProposedReferendumController extends AbstractController

@@ -8,33 +8,6 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-
-    <div id="piechart"></div>
-
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-    <script type="text/javascript">
-        // Load google charts
-        google.charts.load('current', {'packages':['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
-
-        // Draw the chart and set the chart values
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-                ['Task', 'Votes'],
-                ['Yes', 1],
-                ['No', 2],
-            ]);
-
-            // Optional; add a title and set the width and height of the chart
-            var options = {'title':'Vote Distribution', 'width':550, 'height':400, 'colors':['#05b71d', '#e00b0b'], 'backgroundColor' :'#a7f1a7' };
-
-            // Display the chart inside the <div> element with id="piechart"
-            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-            chart.draw(data, options);
-        }
-    </script>
-
     <progress value="10" max="25">
 
     </progress>

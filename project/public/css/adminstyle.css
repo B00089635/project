@@ -1,5 +1,5 @@
 body{
-    background-color: lightgreen;
+    background-color: #f2f2f2;
 }
 
 ul {
@@ -23,10 +23,47 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: yellow;
+    background-color: #666666;
 }
 
 .active {
     background-color: red;
+}
+
+
+.adminHead{
+    color: #b3b3b3;
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #e6e6e6}
+tr:nth-child(odd){background-color: #cccccc}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+.userimage1{
+    padding-top: 10px;
+    padding-left: 300px;
+    height: 25px;
+}
+
+.userimage2{
+    padding-top: 10px;
+    padding-left: 5px;
+    height: 25px;
 }
 
