@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53ce886e-5177-48f3-989e-e4f936bc0e1e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/public/css/adminstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/adminstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/studentstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/studentstyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/referendum/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ProposedReferendumController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProposedReferendumController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/referendum/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/referendum/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/student/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/student/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/referendum/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/referendum/edit.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,106 +19,93 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-              <folding>
-                <element signature="e#34#54#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/user/index.html.twig">
+        <entry file="file://$PROJECT_DIR$/templates/referendum/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="32" selection-end-line="1" />
+              <caret column="18" selection-start-column="18" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/student/index.html.twig">
+        <entry file="file://$PROJECT_DIR$/templates/referendum/edit.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="7" column="16" selection-start-line="7" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repository/UserRepository.php">
+        <entry file="file://$PROJECT_DIR$/templates/referendum/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            <state relative-caret-position="119">
+              <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ReferendumController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-52">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
               <folding>
-                <element signature="e#34#54#0#PHP" expanded="true" />
+                <element signature="e#34#60#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ProposedReferendumController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+              <folding>
+                <element signature="e#34#68#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/proposed_referendum/new.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="38" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/proposed_referendum/_form.html.twig">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Form/UserType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="102">
               <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-              <folding>
-                <element signature="e#34#99#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/StudentController.php">
+        <entry file="file://$PROJECT_DIR$/src/Form/ProposedReferendumType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="102">
               <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-              <folding>
-                <element signature="e#34#99#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/adminstyle.css">
+        <entry file="file://$PROJECT_DIR$/src/Form/ReferendumType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="39" selection-start-line="39" selection-end-line="55" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/css/studentstyle.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="67" column="1" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+            <state relative-caret-position="102">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -160,7 +135,6 @@
         <option value="$PROJECT_DIR$/templates/proposed_referendum/edit.html.twig" />
         <option value="$PROJECT_DIR$/templates/proposed_referendum/new.html.twig" />
         <option value="$PROJECT_DIR$/templates/proposed_referendum/show.html.twig" />
-        <option value="$PROJECT_DIR$/templates/referendum/edit.html.twig" />
         <option value="$PROJECT_DIR$/templates/referendum/new.html.twig" />
         <option value="$PROJECT_DIR$/templates/referendum/show.html.twig" />
         <option value="$PROJECT_DIR$/templates/public/index.html.twig" />
@@ -171,8 +145,6 @@
         <option value="$PROJECT_DIR$/templates/admin/index.html.twig" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/public/css/adminstyle.css" />
-        <option value="$PROJECT_DIR$/templates/referendum/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/ProposedReferendumController.php" />
         <option value="$PROJECT_DIR$/templates/proposed_referendum/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/user/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/user/edit.html.twig" />
@@ -183,8 +155,12 @@
         <option value="$PROJECT_DIR$/public/css/studentstyle.css" />
         <option value="$PROJECT_DIR$/src/Repository/UserRepository.php" />
         <option value="$PROJECT_DIR$/templates/student/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/src/Form/UserType.php" />
+        <option value="$PROJECT_DIR$/src/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/templates/referendum/edit.html.twig" />
+        <option value="$PROJECT_DIR$/templates/referendum/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/referendum/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/ProposedReferendumController.php" />
       </list>
     </option>
   </component>
@@ -317,42 +293,24 @@
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="DataFixtures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Form" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="proposed_referendum" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project" type="b2602c69:ProjectViewProjectNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="referendum" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -363,7 +321,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/student" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/referendum" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -374,6 +332,7 @@
       <recent name="C:\Users\Mcloughlin101\Desktop\KEEP\College\Year 3\Semester2\WFD\project\project\project\public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mcloughlin101\Desktop\KEEP\College\Year 3\Semester2\WFD\project\project\project\templates\referendum" />
       <recent name="C:\Users\Mcloughlin101\Desktop\KEEP\College\Year 3\Semester2\WFD\project\project\project\templates\student" />
       <recent name="C:\Users\Mcloughlin101\Desktop\KEEP\College\Year 3\Semester2\WFD\project\project\project\public\css" />
       <recent name="C:\Users\Mcloughlin101\Desktop\KEEP\College\Year 3\Semester2\WFD\project\project\project\templates\admin" />
@@ -407,12 +366,12 @@
       <workItem from="1554899181895" duration="806000" />
       <workItem from="1554901275821" duration="2516000" />
       <workItem from="1554904954845" duration="5715000" />
-      <workItem from="1554925464120" duration="26586000" />
+      <workItem from="1554925464120" duration="30220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47509000" />
+    <option name="totallyTimeSpent" value="51143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -464,20 +423,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190410132323.php" />
     <entry file="file://$PROJECT_DIR$/src/Controller/DashboardController.php" />
     <entry file="file://$PROJECT_DIR$/templates/dashboard/index.html.twig" />
@@ -511,13 +456,6 @@
     <entry file="file://$PROJECT_DIR$/templates/referendum/_form.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/ProposedReferendumType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1225">
@@ -531,9 +469,6 @@
     <entry file="file://$PROJECT_DIR$/templates/proposed_referendum/_delete_form.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/proposed_referendum/_form.html.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/proposed_referendum/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -542,13 +477,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/proposed_referendum/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/referendum/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
@@ -566,13 +494,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/proposed_referendum/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -635,37 +556,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ReferendumController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="e#34#60#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ProposedReferendumController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <element signature="e#34#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/proposed_referendum/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/referendum/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -703,13 +597,6 @@
           <folding>
             <element signature="e#36#56#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -778,16 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
-          <folding>
-            <element signature="e#34#54#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/UserRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -798,10 +675,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="38" column="58" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
+          <folding>
+            <element signature="e#34#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/referendum/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/referendum/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="54" selection-start-line="7" selection-start-column="54" selection-end-line="7" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/referendum/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/UserType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-end-line="16" />
+        <state relative-caret-position="102">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/ReferendumType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/ProposedReferendumType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ReferendumController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding>
+            <element signature="e#34#60#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/proposed_referendum/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/proposed_referendum/_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ProposedReferendumController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="e#34#68#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

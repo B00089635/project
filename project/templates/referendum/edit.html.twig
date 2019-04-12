@@ -2,7 +2,12 @@
 
 {% block title %}Edit Referendum{% endblock %}
 
+
+
 {% block body %}
+    <link rel="stylesheet" href="../../css/adminstyle.css"/>
+
+
     <h1>Edit Referendum</h1>
 
     {{ include('referendum/_form.html.twig', {'button_label': 'Update'}) }}

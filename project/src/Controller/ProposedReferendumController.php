@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\ProposedReferendum;
 use App\Form\ProposedReferendumType;
 use App\Repository\ProposedReferendumRepository;
+use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -29,18 +30,33 @@ class ProposedReferendumController extends AbstractController
     }
 
     /**
+     * @Route("/support/{id}", name="proposed_referendum_support", methods={"POST"})
+     */
+    public function support(Request $request){
+
+    }
+
+    /**
      * @Route("/new", name="proposed_referendum_new", methods={"GET","POST"})
      */
-    public function new(Request $request): Response
+    public function new(Request $request,ObjectManager $manager): Response
     {
         $proposedReferendum = new ProposedReferendum();
         $form = $this->createForm(ProposedReferendumType::class, $proposedReferendum);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($proposedReferendum);
-            $entityManager->flush();
+            $user = $roles = $this->getUser()->getUsername();
+            $details = $proposedReferendum->getDetails();
+            $support = 0;
+
+            $proposal = new ProposedReferendum();
+            $proposal->setUser($user);
+            $proposal->setDetails($details);
+            $proposal->setSupport($support);
+
+            $manager->persist($proposal);
+            $manager->flush();
 
             return $this->redirectToRoute('proposed_referendum_index');
         }
