@@ -25,6 +25,13 @@
                 <td>
                     <a href="{{ path('proposed_referendum_show', {'id': proposed_referendum.id}) }}">show</a>
                     <a href="{{ path('proposed_referendum_edit', {'id': proposed_referendum.id}) }}">edit</a>
+                    <form method="post" action="{{ path('proposed_referendum_support', {'id': proposed_referendum.id}) }}" onsubmit="return confirm('Are you sure you want to support this referendum?');">
+                        <input type="hidden" name="_method" value="POST">
+                        <input type="hidden" name="proposal_id" value="{{ proposed_referendum.id }}">
+                        <button type="submit" value="{{ proposed_referendum.id }}" class="mb-xs mt-xs mr-xs btn btn-primary">
+                            Support this
+                        </button>
+                    </form>
                 </td>
             </tr>
         {% else %}
