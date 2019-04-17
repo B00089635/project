@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Referendum;
 use App\Form\ReferendumType;
+use App\Repository\ProposedReferendumRepository;
 use App\Repository\ReferendumRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -21,11 +22,12 @@ class ReferendumController extends AbstractController
     /**
      * @Route("/", name="referendum_index", methods={"GET"})
      */
-    public function index(ReferendumRepository $referendumRepository): Response
+    public function index(ReferendumRepository $referendumRepository,ProposedReferendumRepository $proposedReferendumRepository): Response
     {
         return $this->render('referendum/index.html.twig', [
             'referendums' => $referendumRepository->findAll(),
-        ]);
+                'proposed_referendums' => $proposedReferendumRepository->findAll(),
+            ]);
     }
 
     /**

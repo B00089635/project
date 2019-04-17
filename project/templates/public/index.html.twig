@@ -13,6 +13,38 @@
 <div class="example-wrapper">
     <h1>Home Page</h1>
 
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>User</th>
+            <th>Details</th>
+            <th>Support</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for proposed_referendum in proposed_referendums %}
+            <tr>
+                <td>{{ proposed_referendum.id }}</td>
+                <td>{{ proposed_referendum.user }}</td>
+                <td>{{ proposed_referendum.details }}</td>
+                <td>{{ proposed_referendum.support }}</td>
+                <td>
+
+                    <a href = "{{ url('proposed_referendum_index') }}"><button type="button">Support</button></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+
 
 </div>
 {% endblock %}
