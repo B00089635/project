@@ -41,6 +41,51 @@
         {% endfor %}
         </tbody>
     </table>
-
     <a href="{{ path('proposed_referendum_new') }}">Create new</a>
+
+    <br><br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Details</th>
+            <th>Date</th>
+            <th>Votes for</th>
+            <th>Votes Against</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for referendum in referendums %}
+            <tr>
+                <td>{{ referendum.id }}</td>
+                <td>{{ referendum.title }}</td>
+                <td>{{ referendum.details }}</td>
+                <td>{{ referendum.date }}</td>
+                <td>{{ referendum.votesFor }}</td>
+                <td>{{ referendum.votesAgainst }}</td>
+                <td>
+                    <form method="post" action="{{ path('voteFor') }}">
+                        <input type="hidden" name="id" value="{{ referendum.id }}">
+                        <button type="submit">
+                            For Vote!
+                        </button>
+                    </form>
+                    <form method="post" action="{{ path('voteAgainst') }}">
+                        <input type="hidden" name="id" value="{{ referendum.id }}">
+                        <button type="submit">
+                            Against Vote!
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
 {% endblock %}

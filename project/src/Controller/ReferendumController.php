@@ -15,12 +15,12 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 
 /**
  * @Route("/referendum")
- * @IsGranted("ROLE_ADMIN")
  */
 class ReferendumController extends AbstractController
 {
     /**
      * @Route("/", name="referendum_index", methods={"GET"})
+     * @IsGranted("ROLE_ADMIN")
      */
     public function index(ReferendumRepository $referendumRepository,ProposedReferendumRepository $proposedReferendumRepository): Response
     {
@@ -32,6 +32,7 @@ class ReferendumController extends AbstractController
 
     /**
      * @Route("/voteFor", name="voteFor", methods={"POST"})
+     * @IsGranted("ROLE_STUDENT")
      */
 
     public function voteFor(Request $request, ReferendumRepository $ReferendumRepository){
@@ -43,11 +44,12 @@ class ReferendumController extends AbstractController
         $entityManager->persist($Referendum);
         $entityManager->flush();
 
-        return $this->redirectToRoute('referendum_index');
+        return $this->redirectToRoute('proposed_referendum_index');
     }
 
     /**
      * @Route("/voteAgainst", name="voteAgainst", methods={"POST"})
+     * @IsGranted("ROLE_STUDENT")
      */
     public function voteAgainst(Request $request, ReferendumRepository $ReferendumRepository){
         $Referendum = $ReferendumRepository->find($request->request->get('id'));
@@ -58,11 +60,12 @@ class ReferendumController extends AbstractController
         $entityManager->persist($Referendum);
         $entityManager->flush();
 
-        return $this->redirectToRoute('referendum_index');
+        return $this->redirectToRoute('proposed_referendum_index');
     }
 
     /**
      * @Route("/new", name="referendum_new", methods={"GET","POST"})
+     * @IsGranted("ROLE_ADMIN")
      */
     public function new(Request $request): Response
     {
@@ -96,6 +99,7 @@ class ReferendumController extends AbstractController
 
     /**
      * @Route("/{id}/edit", name="referendum_edit", methods={"GET","POST"})
+     * @IsGranted("ROLE_ADMIN")
      */
     public function edit(Request $request, Referendum $referendum): Response
     {
@@ -118,6 +122,7 @@ class ReferendumController extends AbstractController
 
     /**
      * @Route("/{id}", name="referendum_delete", methods={"DELETE"})
+     * @IsGranted("ROLE_ADMIN")
      */
     public function delete(Request $request, Referendum $referendum): Response
     {
