@@ -31,6 +31,37 @@ class ReferendumController extends AbstractController
     }
 
     /**
+     * @Route("/voteFor", name="voteFor", methods={"POST"})
+     */
+
+    public function voteFor(Request $request, ReferendumRepository $ReferendumRepository){
+        $Referendum = $ReferendumRepository->find($request->request->get('id'));
+
+        $voteFor = $Referendum->getVotesFor();
+        $Referendum->setVotesFor($voteFor + 1);
+        $entityManager = $this->getDoctrine()->getManager();
+        $entityManager->persist($Referendum);
+        $entityManager->flush();
+
+        return $this->redirectToRoute('referendum_index');
+    }
+
+    /**
+     * @Route("/voteAgainst", name="voteAgainst", methods={"POST"})
+     */
+    public function voteAgainst(Request $request, ReferendumRepository $ReferendumRepository){
+        $Referendum = $ReferendumRepository->find($request->request->get('id'));
+
+        $voteAgainst = $Referendum->getVotesAgainst();
+        $Referendum->setVotesAgainst($voteAgainst + 1);
+        $entityManager = $this->getDoctrine()->getManager();
+        $entityManager->persist($Referendum);
+        $entityManager->flush();
+
+        return $this->redirectToRoute('referendum_index');
+    }
+
+    /**
      * @Route("/new", name="referendum_new", methods={"GET","POST"})
      */
     public function new(Request $request): Response

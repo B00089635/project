@@ -31,6 +31,16 @@ class Referendum
      */
     private $date;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $votesFor;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $votesAgainst;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -71,4 +81,28 @@ class Referendum
 
         return $this;
     }
+
+    public function getVotesAgainst(): ?int
+    {
+        return $this->votesAgainst;
+    }
+
+    public function setVotesAgainst(int $votesAgainst): self
+    {
+        $this->votesAgainst = $votesAgainst;
+
+        return $this;
+    }
+
+    public function getVotesFor(): ?int
+    {
+        return $this->votesFor;
+    }
+    public function setVotesFor(int $votesFor): self
+    {
+        $this->votesFor = $votesFor;
+
+        return $this;
+    }
+
 }

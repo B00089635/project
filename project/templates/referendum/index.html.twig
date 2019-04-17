@@ -12,6 +12,8 @@
                 <th>Title</th>
                 <th>Details</th>
                 <th>Date</th>
+                <th>Votes for</th>
+                <th>Votes Against</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -22,9 +24,23 @@
                 <td>{{ referendum.title }}</td>
                 <td>{{ referendum.details }}</td>
                 <td>{{ referendum.date }}</td>
+                <td>{{ referendum.votesFor }}</td>
+                <td>{{ referendum.votesAgainst }}</td>
                 <td>
                     <a href = "{{ path('referendum_show', {'id': referendum.id}) }}"><button type="button">show</button></a>
                     <a href = "{{ path('referendum_edit', {'id': referendum.id}) }}"><button type="button">edit</button></a>
+                    <form method="post" action="{{ path('voteFor') }}">
+                        <input type="hidden" name="id" value="{{ referendum.id }}">
+                        <button type="submit">
+                            For Vote!
+                        </button>
+                    </form>
+                    <form method="post" action="{{ path('voteAgainst') }}">
+                        <input type="hidden" name="id" value="{{ referendum.id }}">
+                        <button type="submit">
+                            Against Vote!
+                        </button>
+                    </form>
                 </td>
             </tr>
         {% else %}
