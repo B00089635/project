@@ -1,9 +1,9 @@
-{% extends 'admin/base.html.twig' %}
+{% extends 'base.html.twig' %}
 
-{% block title %}show{% endblock %}
+{% block title %}Show{% endblock %}
 
 {% block body %}
-    <h1>Referendum</h1>
+    <h1>Show</h1>
 
     <table class="table">
         <tbody>
@@ -34,11 +34,8 @@
         </tbody>
     </table>
 
-    <a href="{{ path('referendum_index') }}">back to list</a>
+    <a href = "{{ url('public_home') }}"><button type="button">Back to List!</button></a>
 
-    <a href="{{ path('referendum_edit', {'id': referendum.id}) }}">edit</a>
-
-    {{ include('referendum/_delete_form.html.twig') }}
 
     <br><br>
 

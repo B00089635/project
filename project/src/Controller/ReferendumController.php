@@ -74,6 +74,8 @@ class ReferendumController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+            $referendum->setVotesFor(0);
+            $referendum->setVotesAgainst(0);
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($referendum);
             $entityManager->flush();

@@ -20,7 +20,8 @@
             <th>User</th>
             <th>Details</th>
             <th>Support</th>
-            <th>actions</th>
+            <th>action</th>
+            <th>action</th>
         </tr>
         </thead>
         <tbody>
@@ -31,7 +32,9 @@
                 <td>{{ proposed_referendum.details }}</td>
                 <td>{{ proposed_referendum.support }}</td>
                 <td>
-
+                    <a href = "{{ path('showTwo', {'id': proposed_referendum.id}) }}"><button type="button">show</button></a>
+                </td>
+                <td>
                     <a href = "{{ url('proposed_referendum_index') }}"><button type="button">Support</button></a>
                 </td>
             </tr>
@@ -43,7 +46,43 @@
         </tbody>
     </table>
 
-
+    <br><br>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Details</th>
+            <th>Date</th>
+            <th>Votes for</th>
+            <th>Votes Against</th>
+            <th>action</th>
+            <th>action</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for referendum in referendums %}
+            <tr>
+                <td>{{ referendum.id }}</td>
+                <td>{{ referendum.title }}</td>
+                <td>{{ referendum.details }}</td>
+                <td>{{ referendum.date }}</td>
+                <td>{{ referendum.votesFor }}</td>
+                <td>{{ referendum.votesAgainst }}</td>
+                <td>
+                    <a href = "{{ path('show', {'id': referendum.id}) }}"><button type="button">show</button></a>
+                </td>
+                <td>
+                    <a href = "{{ url('proposed_referendum_index') }}"><button type="button">Vote!</button></a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
 
 
 </div>

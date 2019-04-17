@@ -1,9 +1,9 @@
-{% extends 'student/base.html.twig' %}
+{% extends 'base.html.twig' %}
 
-{% block title %}show{% endblock %}
+{% block title %}Show{% endblock %}
 
 {% block body %}
-    <h1>ProposedReferendum</h1>
+    <h1>Show</h1>
 
     <table class="table">
         <tbody>
@@ -26,11 +26,7 @@
         </tbody>
     </table>
 
-    <a href="{{ path('proposed_referendum_index') }}">back to list</a>
-
-    <a href="{{ path('proposed_referendum_edit', {'id': proposed_referendum.id}) }}">edit</a>
-
-    {{ include('proposed_referendum/_delete_form.html.twig') }}
+    <a href = "{{ url('public_home') }}"><button type="button">Back to List!</button></a>
 
     <br>
 
